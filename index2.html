@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Foodoo</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/hero.png" type="image/x-icon" />
+    <!-- link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="index2.css" />
+    <!-- link font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!--owl carousel-->
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <!---->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="container-lg">
+      <!-- nav-bar -->
+      <nav
+        id="mynavbar"
+        class="navbar container-lg navbar-expand-lg navbar-dark fixed-top"
+      >
+        <div class="container-lg">
+          <!-- Navbar logo,name -->
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-utensils fa-2x color_or_icon"></i>
+            <b class="brand_name">Foodoo</b>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >HOME</a
+                >
+              </li>
+              <!-- ABOUT -->
+              <li class="nav-item">
+                <a class="nav-link" href="#about">ABOUT</a>
+              </li>
+              <!-- SERVICE -->
+              <li class="nav-item">
+                <a class="nav-link" href="#servicego">SERVICE</a>
+              </li>
+              <!-- PAGES -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PAGES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- CONTACT -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+              <li class="nav-item ms-1 mt-1">
+                <a href="#" class="btn btn_bookatable btn-danger">
+                  BOOK A TABLE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- header content -->
+      <div class="header_content py-5">
+        <div
+          class="d-flex align-items-center justify-content-center text-center py-5"
+        >
+          <div class="text_header_box py-5">
+            <h1>
+              <b class="h1_text_header">
+                Foodoo & <br />
+                Contact Us
+              </b>
+            </h1>
+            <a href="index.html" class="link_header px-2">HOME</a>
+            /
+            <a href="#" class="link_header px-2">PAGES</a>
+            /
+            <a href="#" class="link_header px-2">CONTATC</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- content_body -->
+    <div class="content_body container-lg py-5">
+      <!-- content_body_1 -->
+      <div class="content_body_1 py-5">
+        <div class="d-flex justify-content-center">
+          <hr class="line" />
+          <h5 class="font_h5_content_body_2 px-3">Food Menu</h5>
+          <hr class="line" />
+        </div>
+        <h3 class="font_h2_content_body_2 text-center">
+          <b>Most Popular Items</b>
+        </h3>
+        <ul
+          class="nav nav-tabs justify-content-center"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item nnn" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="home-tab-pane"
+              aria-selected="true"
+            >
+              <!-- Popular -->
+              <div class="nav_menu d-flex align-items-center">
+                <div>
+                  <i class="fa-solid fa-mug-saucer number_years"></i>
+                </div>
+                <div>
+                  <p class="p-0 m-0">Popular</p>
+                  <b>Breakfast</b>
+                </div>
+              </div>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link nnn"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="profile-tab-pane"
+              aria-selected="false"
+            >
+              <!-- Special -->
+              <div class="nav_menu d-flex align-items-center">
+                <div>
+                  <i class="fa-solid fa-burger number_years"></i>
+                </div>
+                <div>
+                  <p class="p-0 m-0">Special</p>
+                  <b>Launch</b>
+                </div>
+              </div>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link nnn"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact-tab-pane"
+              aria-selected="false"
+            >
+              <!-- Lovely -->
+              <div class="nav_menu d-flex align-items-center">
+                <div>
+                  <i class="fa-solid fa-utensils number_years"></i>
+                </div>
+                <div>
+                  <p class="p-0 m-0">Lovely</p>
+                  <b>Dinner</b>
+                </div>
+              </div>
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home-tab-pane"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0"
+          >
+            <div class="list_menu mt-4 justify-content-end">
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- menu_1 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_1 justify-content-md-end py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-1.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Grill meat</b>
+                      <b class="fipce">$115</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_2 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_2 justify-content-md-end py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-3.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-2"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Combo frill meat 1</b>
+                      <b class="fipce">$230</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_3 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_3 justify-content-md-end py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-5.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-3"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Combo Grill meat 3</b>
+                      <b class="fipce">$315</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_4 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_4 justify-content-md-end py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-7.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-4"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Pizza</b>
+                      <b class="fipce">$125</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!-- menu_5 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_5 justify-content-md-start py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-2.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Egg with meat</b>
+                      <b class="fipce">$85</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_6 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_6 justify-content-md-start py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-4.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">BeefSteak</b>
+                      <b class="fipce">$220</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_7 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_7 justify-content-md-start py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-6.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Chicken Potato</b>
+                      <b class="fipce">$145</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_8 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_8 justify-content-md-start py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-8.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Beffsteack 2</b>
+                      <b class="fipce">$265</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile-tab-pane"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+            tabindex="0"
+          >
+            <div class="list_menu mt-4 justify-content-end">
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- menu_1 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_1 justify-content-md-end py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-1.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Grill meat</b>
+                      <b class="fipce">$115</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_2 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_2 justify-content-md-end py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-3.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-2"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Combo frill meat 1</b>
+                      <b class="fipce">$230</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_3 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_3 justify-content-md-end py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-5.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-3"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Combo Grill meat 3</b>
+                      <b class="fipce">$315</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_4 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_4 justify-content-md-end py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-7.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-4"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Pizza</b>
+                      <b class="fipce">$125</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!-- menu_5 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_1 justify-content-md-start py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-2.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Egg with meat</b>
+                      <b class="fipce">$85</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_6 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_2 justify-content-md-start py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-4.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">BeefSteak</b>
+                      <b class="fipce">$220</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_7 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_3 justify-content-md-start py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-6.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Chicken Potato</b>
+                      <b class="fipce">$145</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_8 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_4 justify-content-md-start py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-8.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Beffsteack 2</b>
+                      <b class="fipce">$265</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="contact-tab-pane"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+            tabindex="0"
+          >
+            <div class="list_menu mt-4 justify-content-end">
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- menu_1 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_5 justify-content-md-end py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-1.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Grill meat</b>
+                      <b class="fipce">$115</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_2 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_6 justify-content-md-end py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-3.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-2"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Combo frill meat 1</b>
+                      <b class="fipce">$230</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_3 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_7 justify-content-md-end py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-5.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-3"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Combo Grill meat 3</b>
+                      <b class="fipce">$315</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_4 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_8 justify-content-md-end py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-7.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-4"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Pizza</b>
+                      <b class="fipce">$125</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!-- menu_5 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_5 justify-content-md-start py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-2.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Egg with meat</b>
+                      <b class="fipce">$85</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_6 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_6 justify-content-md-start py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-4.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">BeefSteak</b>
+                      <b class="fipce">$220</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_7 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_7 justify-content-md-start py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-6.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Chicken Potato</b>
+                      <b class="fipce">$145</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                  <!-- menu_8 -->
+                  <div
+                    class="d-flex justify-content-center ani_food_8 justify-content-md-start py-2"
+                  >
+                    <div class="img_menu">
+                      <img
+                        src="img/menu-8.jpg"
+                        class="w-100 pe-3"
+                        alt="menu-1"
+                      />
+                    </div>
+                    <div>
+                      <b class="name_food_menu">Beffsteack 2</b>
+                      <b class="fipce">$265</b>
+                      <hr class="my-2" />
+                      ipsum ipsum clita erat amet dolor justo diam
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content_body_2 -->
+      <div class="content_body_2">
+        <div class="d-flex justify-content-center">
+          <hr class="line" />
+          <h5 class="font_h5_content_body_2 px-3">Contact Us</h5>
+          <hr class="line" />
+        </div>
+        <h3 class="font_h2_content_body_2 text-center">
+          <b>Contact For Any Query</b>
+        </h3>
+        <div class="row py-3">
+          <div class="col-4 text-center">
+            <div class="d-flex justify-content-center">
+              <h5 class="font_h5_content_body_2 pe-3">Booking</h5>
+              <hr class="line" />
+            </div>
+            <div class="text-center">
+              <i class="fa-regular fa-envelope-open color_or_icon"></i>
+              <span>book@example.com</span>
+            </div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="d-flex justify-content-center">
+              <h5 class="font_h5_content_body_2 pe-3">General</h5>
+              <hr class="line" />
+            </div>
+            <div class="text-center">
+              <i class="fa-regular fa-envelope-open color_or_icon"></i>
+              <span>info@example.com</span>
+            </div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="d-flex justify-content-center">
+              <h5 class="font_h5_content_body_2 pe-3">Technical</h5>
+              <hr class="line" />
+            </div>
+            <div class="text-center">
+              <i class="fa-regular fa-envelope-open color_or_icon"></i>
+              <span>tech@example.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="row p-2 gx-3">
+          <div class="col-md-6 gx-3">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.408476013605!2d106.60922461143993!3d10.779993989324625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752d1a2fcaf6d5%3A0x885f0e84fe85cd8e!2zODEgxJAuIHPhu5EgMTQsIELDrG5oIEjGsG5nIEhvw6AgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmggNzAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1740589235663!5m2!1svi!2s"
+                width="100%"
+                height="288px"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 gx-3">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Your Name"
+                  />
+                  <label for="floatingInput">Your Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Date & Time"
+                  />
+                  <label for="floatingInput">Date & Time</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>People 0</option>
+                    <option value="1">People 1</option>
+                    <option value="2">People 2</option>
+                    <option value="3">People 3</option>
+                  </select>
+                  <label for="floatingSelect">No of People</label>
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-danger btn_bookatable w-100">
+                  BOOK NOW
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- thanhleft -->
+      <div class="text-center">
+        <!-- From Uiverse.io by OliverZeros -->
+        <button
+          class="button button-item"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <span class="button-bg">
+            <span class="button-bg-layers">
+              <span class="button-bg-layer button-bg-layer-1 -purple"></span>
+              <span class="button-bg-layer button-bg-layer-2 -turquoise"></span>
+              <span class="button-bg-layer button-bg-layer-3 -yellow"></span>
+            </span>
+          </span>
+          <span class="button-inner">
+            <span class="button-inner-static">Thầy bấm vào đây nè ạ</span>
+            <span class="button-inner-hover">Thầy bấm vào đây nè ạ</span>
+          </span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              <span
+                >Cảm ơn thầy đã coi bài của con. Chúc thầy 1 ngày vui vẻ<3</span
+              >
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="back_ground pt-5 text-md-start text-center">
+      <div class="row p-5">
+        <!-- Company -->
+        <div class="col-md-6 col-lg-3">
+          <div class="d-flex justify-content-md-start justify-content-center">
+            <h3 class="font_h5_content_body_2 pe-3">Company</h3>
+            <hr class="line" />
+          </div>
+          <a href="#" class="link_text_footer">
+            <i class="fa-solid fa-angle-right pe-2"></i>
+            <span class="text_title_footer">About Us</span>
+          </a>
+          <br />
+          <a href="#" class="link_text_footer">
+            <i class="fa-solid fa-angle-right pe-2"></i>
+            <span class="text_title_footer">Contact Us</span>
+          </a>
+          <br />
+          <a href="#" class="link_text_footer">
+            <i class="fa-solid fa-angle-right pe-2"></i>
+            <span class="text_title_footer">Reservation</span>
+          </a>
+          <br />
+          <a href="#" class="link_text_footer">
+            <i class="fa-solid fa-angle-right pe-2"></i>
+            <span class="text_title_footer">Privacy Policy</span>
+          </a>
+          <br />
+          <a href="#" class="link_text_footer">
+            <i class="fa-solid fa-angle-right pe-2"></i>
+            <span class="text_title_footer">Term & Condition</span>
+          </a>
+        </div>
+        <!-- Contact -->
+        <div class="col-md-6 col-lg-3">
+          <div class="d-flex justify-content-md-start justify-content-center">
+            <h5 class="font_h5_content_body_2 pe-3">Contact</h5>
+            <hr class="line" />
+          </div>
+          <a href="#" class="link_text_footer">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>123 Street, California, USA</span>
+          </a>
+          <br />
+          <a href="#" class="link_text_footer">
+            <i class="fa-solid fa-phone"></i>
+            <span>+012 345 67890</span>
+          </a>
+          <br />
+          <a href="#" class="link_text_footer">
+            <i class="fa-solid fa-envelope"></i>
+            <span>thanhhuy.itc.@gmail.com</span>
+          </a>
+          <br />
+          <div class="py-2">
+            <a href="#" class="text-decoration-none">
+              <i class="ggg fa-brands fa-twitter rounded-circle text-light"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/huathanhhuy2k?locale=vi_VN"
+              class="text-decoration-none"
+            >
+              <i
+                class="ggg fa-brands fa-facebook rounded-circle text-light"
+              ></i>
+            </a>
+            <a
+              href="https://www.facebook.com/trieudothachanh.17?locale=vi_VN"
+              class="text-decoration-none"
+            >
+              <i class="ggg fa-brands fa-youtube rounded-circle text-light"></i>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <i
+                class="ggg fa-brands fa-linkedin-in rounded-circle text-light"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <!-- Opening -->
+        <div class="col-md-6 col-lg-3">
+          <div class="d-flex justify-content-md-start justify-content-center">
+            <h5 class="font_h5_content_body_2 pe-3">Opening</h5>
+            <hr class="line" />
+          </div>
+          <span class="text-white">
+            Monday - Saturday <br />
+            09AM - 09PM <br />
+            Sunday <br />
+            10AM - 08PM
+          </span>
+        </div>
+        <!-- Newsletter -->
+        <div class="col-md-6 col-lg-3">
+          <div class="d-flex justify-content-md-start justify-content-center">
+            <h5 class="font_h5_content_body_2 pe-3">Newsletter</h5>
+            <hr class="line" />
+          </div>
+          <span class="text-white">
+            Register your email to receive <br />
+            new letters about
+          </span>
+          <div class="ption py-2">
+            <div class="form-floating mb-3 revl1">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="revl2 btn_bookatable">
+              <a href="#" class="btn btn-danger btn_bookatable">SIGNUP</a>
+            </div>
+          </div>
+        </div>
+        <hr class="text-white" />
+        <div class="col-md-6 text-white">
+          <span>
+            All Right Reserved. Designed By <u>foodoo</u>
+            <br />
+            Distributed By <u>foodoo</u>
+          </span>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="link_footer px-2">Home</a>
+          <a href="#" class="link_footer px-2">Cookies</a>
+          <a href="#" class="link_footer px-2">Help</a>
+          <a href="#" class="link_footer px-2">FQAs</a>
+        </div>
+      </div>
+      <hr />
+    </footer>
+    <div class="icon-bar">
+      <a
+        href="https://www.facebook.com/huathanhhuy2k?locale=vi_VN"
+        class="facebook"
+        ><i class="fa-brands fa-facebook"></i
+      ></a>
+      <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="google"><i class="fa-brands fa-google"></i></a>
+      <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+      <a
+        href="https://www.youtube.com/channel/UCvj-UDSp36dWtUB5adF7O7A"
+        class="youtube"
+        ><i class="fa-brands fa-youtube"></i
+      ></a>
+    </div>
+    <button id="scrollToTopBtn" title="Cuộn lên đầu trang">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-arrow-up"
+      >
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </button>
+  </body>
+</html>
+
+<script>
+  // lay thanh nav-bar
+  mynavbar = document.getElementById("mynavbar");
+  // check cuon trang web
+  window.onscroll = function () {
+    if (document.documentElement.scrollTop > 0)
+      mynavbar.style.background =
+        "linear-gradient(rgba(3, 16, 51, 0.9), rgba(3, 16, 51, 0.9))";
+    else
+      mynavbar.style.background =
+        "linear-gradient(rgba(3, 16, 51, 0.9), rgba(3, 16, 51, 0.9))";
+  };
+</script>
+<!-- roll -->
+<script>
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 555 ||
+      document.documentElement.scrollTop > 555
+    ) {
+      document.getElementById("scrollToTopBtn").style.display = "block";
+    } else {
+      document.getElementById("scrollToTopBtn").style.display = "none";
+    }
+  }
+
+  document.getElementById("scrollToTopBtn").onclick = function () {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
+</script>

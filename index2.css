@@ -1,0 +1,458 @@
+/* header */
+header {
+  background: linear-gradient(rgba(3, 16, 51, 0.9), rgba(3, 16, 51, 0.9)),
+    url(img/bg-hero.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+#mynavbar {
+  background: linear-gradient(rgba(3, 16, 51, 1), rgba(3, 16, 51, 1));
+}
+.link_header {
+  text-decoration: none;
+  color: orange;
+}
+/* nav-bar */
+.nav-link:hover {
+  color: white;
+  background-color: orange;
+}
+@media (max-width: 992px) {
+  .navbar {
+    background: linear-gradient(rgba(3, 16, 51, 1), rgba(3, 16, 51, 1));
+  }
+  .navbar * {
+    color: orange;
+  }
+}
+@media (min-width: 992px) {
+  .img_header {
+    width: 50%;
+  }
+}
+.color_or_icon {
+  color: orange;
+}
+.brand_name {
+  color: orange;
+  font-size: 40px;
+}
+.btn_bookatable {
+  background-color: orange;
+  border: orange;
+  border-radius: 1px;
+  color: white;
+}
+/* text_header_box */
+.text_header_box {
+  color: white;
+  animation: anition 2.5s ease forwards;
+}
+@keyframes anition {
+  0% {
+    transform: translateY(-50px);
+    opacity: 30%;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+.h1_text_header {
+  font-size: 80px;
+}
+.h1_btn_text_header_booktable {
+  width: 30%;
+}
+
+/* content_body_2 */
+.font_h5_content_body_2 {
+  font-family: "Dancing Script", serif;
+  font-size: 25px;
+  color: orange;
+}
+.line {
+  height: 0px;
+  border: 2.2px solid red;
+  opacity: 100%;
+  color: red;
+  width: 40px;
+}
+.font_h2_content_body_2 {
+  font-size: 40px;
+}
+
+.back_ground {
+  background: linear-gradient(rgba(3, 16, 51, 1), rgba(3, 16, 51, 1));
+}
+/* content_body_3 */
+.nav_menu {
+  padding-bottom: 12px;
+  border-bottom: 2px solid grey;
+  display: inline-block;
+  position: relative;
+}
+.nav_menu::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: red;
+  position: absolute;
+
+  bottom: -3px;
+  transition: width 0.25s ease;
+}
+.nav_menu:hover::after {
+  width: 100%;
+}
+.name_food_menu {
+  font-size: 20px;
+}
+.fipce {
+  font-size: 20px;
+  color: orange;
+  float: right;
+}
+.number_years {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 40px;
+  color: orange;
+}
+/* left */
+.ani_food_1 {
+  animation: animation_ani_food_1 1.5s ease;
+}
+@keyframes animation_ani_food_1 {
+  0% {
+    transform: translateX(-45px);
+  }
+}
+.ani_food_2 {
+  animation: animation_ani_food_2 1.5s;
+}
+@keyframes animation_ani_food_2 {
+  0% {
+    transform: translateX(-75px);
+  }
+}
+.ani_food_3 {
+  animation: animation_ani_food_3 1.5s;
+}
+@keyframes animation_ani_food_3 {
+  0% {
+    transform: translateX(-105px);
+  }
+}
+.ani_food_4 {
+  animation: animation_ani_food_4 1.5s;
+}
+@keyframes animation_ani_food_4 {
+  0% {
+    transform: translateX(-135px);
+  }
+}
+/* right */
+.ani_food_5 {
+  animation: animation_ani_food_5 1.5s ease;
+}
+@keyframes animation_ani_food_5 {
+  0% {
+    transform: translateX(45px);
+  }
+}
+.ani_food_6 {
+  animation: animation_ani_food_6 1.5s;
+}
+@keyframes animation_ani_food_6 {
+  0% {
+    transform: translateX(75px);
+  }
+}
+.ani_food_7 {
+  animation: animation_ani_food_7 1.5s;
+}
+@keyframes animation_ani_food_7 {
+  0% {
+    transform: translateX(105px);
+  }
+}
+.ani_food_8 {
+  animation: animation_ani_food_8 1.5s;
+}
+@keyframes animation_ani_food_8 {
+  0% {
+    transform: translateX(135px);
+  }
+}
+.nnn:hover i {
+  color: white;
+}
+/* sidenav */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.twitter {
+  background: #55acee;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+.icon-bar {
+  animation: animation_fb 2s ease forwards;
+}
+@keyframes animation_fb {
+  0% {
+    right: -80px;
+  }
+  100% {
+    right: 0;
+  }
+}
+/* content_body_5 */
+.border_img {
+  width: 250px;
+  height: 200px;
+  border-radius: 50%;
+}
+/* footer */
+.link_text_footer {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+.link_text_footer:hover {
+  letter-spacing: 1.2px;
+  color: orange;
+}
+.link_text_footer:active {
+  color: red;
+}
+.link_icon_footer {
+  color: white;
+}
+.ggg {
+  border: 1px solid white;
+  padding: 7px;
+  transition: all 0.25s ease;
+}
+.ggg:hover {
+  background-color: orange;
+}
+.ption {
+  position: relative;
+}
+.revl2 {
+  right: 10px;
+  bottom: 35px;
+  position: absolute;
+  z-index: 9999;
+}
+.link_footer {
+  color: white;
+  border-right: 1px solid white;
+  text-decoration: none;
+}
+/* roll */
+#scrollToTopBtn {
+  display: none; /* Ẩn nút ban đầu */
+  position: fixed; /* Cố định vị trí nút */
+  bottom: 20px; /* Vị trí từ phía dưới */
+  right: 20px; /* Vị trí từ phía phải */
+  z-index: 99; /* Đảm bảo nút nằm trên cùng */
+  border: 1px solid red;
+  outline: none;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#scrollToTopBtn svg {
+  vertical-align: middle;
+}
+#scrollToTopBtn::before {
+  content: "";
+  position: absolute;
+  background-color: orange;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 8px;
+  z-index: -1;
+  transition: all 0.25s;
+}
+#scrollToTopBtn:hover:before {
+  width: 100%;
+}
+.bbb {
+  background-color: transparent;
+}
+/* HOVER */
+/* From Uiverse.io by OliverZeros */
+button {
+  all: unset;
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  height: 3.5rem;
+  align-items: center;
+  border-radius: 9999px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: Segoe UI;
+  font-size: 1.2rem;
+  font-weight: 640;
+  color: #fafaf6;
+  letter-spacing: -0.06em;
+}
+
+.button-item {
+  background-color: transparent;
+  color: #1d1d1f;
+}
+
+.button-item .button-bg {
+  border-color: rgba(255, 208, 116);
+  background-color: rgba(255, 208, 116);
+}
+
+.button-inner,
+.button-inner-hover,
+.button-inner-static {
+  pointer-events: none;
+  display: block;
+}
+
+.button-inner {
+  position: relative;
+}
+
+.button-inner-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(70%);
+}
+
+.button-bg {
+  overflow: hidden;
+  border-radius: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button-bg,
+.button-bg-layer,
+.button-bg-layers {
+  display: block;
+}
+
+.button-bg-layers {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -60%;
+  aspect-ratio: 1 / 1;
+  width: max(200%, 10rem);
+}
+
+.button-bg-layer {
+  border-radius: 9999px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+}
+
+.button-bg-layer.-purple {
+  background-color: rgba(163, 116, 255);
+}
+
+.button-bg-layer.-turquoise {
+  background-color: rgba(23, 241, 209);
+}
+
+.button-bg-layer.-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 208, 116, var(--tw-bg-opacity));
+}
+
+.button:hover .button-inner-static {
+  opacity: 0;
+  transform: translateY(-70%);
+  transition: transform 1.4s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.3s linear;
+}
+
+.button:hover .button-inner-hover {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
+    opacity 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button:hover .button-bg-layer {
+  transition: transform 1.3s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.3s linear;
+}
+
+.button:hover .button-bg-layer-1 {
+  transform: scale(1);
+}
+
+.button:hover .button-bg-layer-2 {
+  transition-delay: 0.1s;
+  transform: scale(1);
+}
+
+.button:hover .button-bg-layer-3 {
+  transition-delay: 0.2s;
+  transform: scale(1);
+}
