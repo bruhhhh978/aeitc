@@ -1,0 +1,447 @@
+* {
+  box-sizing: border-box;
+}
+/* header */
+header {
+  background: linear-gradient(rgba(3, 16, 51, 0.9), rgba(3, 16, 51, 0.9)),
+    url(img/bg-hero.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* nav-bar */
+#mynavbar {
+  background: linear-gradient(rgba(3, 16, 51, 0.9), rgba(3, 16, 51, 0.9));
+}
+.nav-link:hover {
+  color: white;
+  background-color: orange;
+}
+@media (max-width: 992px) {
+  .navbar {
+    background: linear-gradient(rgba(3, 16, 51, 1), rgba(3, 16, 51, 1));
+  }
+  .navbar * {
+    color: orange;
+  }
+}
+@media (min-width: 992px) {
+  .img_header {
+    width: 50%;
+  }
+}
+.color_or_icon {
+  color: orange;
+}
+.brand_name {
+  color: orange;
+  font-size: 40px;
+}
+.btn_bookatable {
+  background-color: orange;
+  border: orange;
+  border-radius: 1px;
+  color: white;
+}
+/* text_header_box */
+.text_header_box {
+  color: white;
+  animation: anition 3.5s ease forwards;
+}
+@keyframes anition {
+  0% {
+    transform: translateY(-50px);
+    opacity: 30%;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+.h1_text_header {
+  font-size: 80px;
+}
+.h1_btn_text_header_booktable {
+  width: 30%;
+}
+/* img_header_box */
+.img_header_box {
+  overflow: hidden;
+}
+.img_header {
+  animation: animation_img_header_scale 3s linear,
+    animation_img_header_rotate 15s infinite linear;
+}
+@keyframes animation_img_header_scale {
+  0% {
+    transform: scale(0.2) rotate(3deg);
+  }
+  100% {
+    transform: scale(1) rotate(90deg);
+  }
+}
+@keyframes animation_img_header_rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* content_body */
+.content_body {
+  background-color: whitesmoke;
+}
+.tes {
+  transform: translateY(0px);
+  background-color: white;
+  height: 300px;
+  transition: height 0.75s ease, background-color 0.75s ease,
+    box-shadow 0.75s ease, transform 1s ease;
+}
+.tes:hover * {
+  color: white;
+}
+.tes:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 100px 1px rgb(81, 81, 81);
+  background-color: orange;
+  height: 325px;
+}
+
+/* img_content_body_2 */
+
+.img_1_content_body_2 {
+  width: 100%;
+  animation: animation_img_content_body2 7.75s linear infinite;
+}
+
+.img_2_content_body_2 {
+  width: 75%;
+  animation: animation_img_2_content_body2 7.75s linear infinite;
+}
+
+.img_3_content_body_2 {
+  width: 75%;
+  animation: animation_img_3_content_body2 7.75s linear infinite;
+}
+
+.img_4_content_body_2 {
+  width: 100%;
+  animation: animation_img_4_content_body2 7.75s linear infinite;
+}
+
+/* img1,4 */
+@keyframes animation_img_content_body2 {
+  0% {
+    transform: scale(1);
+    transform-origin: bottom right;
+  }
+  50% {
+    transform: scale(0.75);
+    transform-origin: bottom right;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: bottom right;
+  }
+}
+@keyframes animation_img_4_content_body2 {
+  0% {
+    transform: scale(1);
+    transform-origin: top left;
+  }
+  50% {
+    transform: scale(0.75);
+    transform-origin: top left;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: top left;
+  }
+}
+/* img2,3 */
+@keyframes animation_img_2_content_body2 {
+  0% {
+    transform: scale(0.75);
+    transform-origin: bottom left;
+  }
+  50% {
+    transform: scale(1.25);
+    transform-origin: bottom left;
+  }
+  100% {
+    transform: scale(0.75);
+    transform-origin: bottom left;
+  }
+}
+
+@keyframes animation_img_3_content_body2 {
+  0% {
+    transform: scale(0.75);
+    transform-origin: top right;
+  }
+  50% {
+    transform: scale(1.25);
+    transform-origin: top right;
+  }
+  100% {
+    transform: scale(0.75);
+    transform-origin: top right;
+  }
+}
+/* content_body_2 */
+.font_h5_content_body_2 {
+  font-family: "Dancing Script", serif;
+  font-size: 25px;
+  color: orange;
+}
+.line {
+  height: 0px;
+  border: 2.2px solid red;
+  opacity: 100%;
+  color: red;
+  width: 40px;
+}
+.font_h2_content_body_2 {
+  font-size: 40px;
+}
+.fake_btn_years::before {
+  content: "";
+  background-color: orange;
+  width: 4px;
+  height: 0;
+  transition: height 0.25s linear;
+}
+.fake_btn_years:hover::before {
+  height: 100%;
+}
+.number_years {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 40px;
+  color: orange;
+}
+/* content_body_3 */
+.nav_menu {
+  padding-bottom: 12px;
+  border-bottom: 2px solid grey;
+  display: inline-block;
+  position: relative;
+}
+.nav_menu::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: red;
+  position: absolute;
+
+  bottom: -3px;
+  transition: width 0.25s ease;
+}
+.nav_menu:hover::after {
+  width: 100%;
+}
+.name_food_menu {
+  font-size: 20px;
+}
+.fipce {
+  font-size: 20px;
+  color: orange;
+  float: right;
+}
+/* left */
+.ani_food_1 {
+  animation: animation_ani_food_1 1.5s ease;
+}
+@keyframes animation_ani_food_1 {
+  0% {
+    transform: translateX(-45px);
+  }
+}
+.ani_food_2 {
+  animation: animation_ani_food_2 1.5s;
+}
+@keyframes animation_ani_food_2 {
+  0% {
+    transform: translateX(-75px);
+  }
+}
+.ani_food_3 {
+  animation: animation_ani_food_3 1.5s;
+}
+@keyframes animation_ani_food_3 {
+  0% {
+    transform: translateX(-105px);
+  }
+}
+.ani_food_4 {
+  animation: animation_ani_food_4 1.5s;
+}
+@keyframes animation_ani_food_4 {
+  0% {
+    transform: translateX(-135px);
+  }
+}
+/* right */
+.ani_food_5 {
+  animation: animation_ani_food_5 1.5s ease;
+}
+@keyframes animation_ani_food_5 {
+  0% {
+    transform: translateX(45px);
+  }
+}
+.ani_food_6 {
+  animation: animation_ani_food_6 1.5s;
+}
+@keyframes animation_ani_food_6 {
+  0% {
+    transform: translateX(75px);
+  }
+}
+.ani_food_7 {
+  animation: animation_ani_food_7 1.5s;
+}
+@keyframes animation_ani_food_7 {
+  0% {
+    transform: translateX(105px);
+  }
+}
+.ani_food_8 {
+  animation: animation_ani_food_8 1.5s;
+}
+@keyframes animation_ani_food_8 {
+  0% {
+    transform: translateX(135px);
+  }
+}
+.nnn:hover i {
+  color: white;
+}
+/* content_body_4 */
+.img_bg_content_body_4 {
+  background: url(img/video.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.img_bg_content_body_4 > i {
+  color: red;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+}
+.img_bg_content_body_4:hover * {
+  filter: brightness(50%);
+}
+.back_ground {
+  background: linear-gradient(rgba(3, 16, 51, 1), rgba(3, 16, 51, 1));
+}
+/* content_body_5 */
+.border_img {
+  width: 250px;
+  height: 200px;
+  border-radius: 50%;
+}
+.back_ground_card_team {
+  transform: translateY(0px);
+  overflow: hidden;
+  background-color: white;
+  height: 300px;
+  transition: height 0.75s ease, background-color 0.75s ease, box-shadow 0.75s,
+    transform 0.75s ease;
+}
+.back_ground_card_team img {
+  transition: 0.5s;
+}
+.back_ground_card_team:hover img {
+  transform: scale(1.1);
+}
+.back_ground_card_team:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 100px 1px rgb(81, 81, 81);
+  height: 366px;
+}
+.bg_icon {
+  background: orange;
+  border: orange;
+  border-radius: 50% 50% 0 0;
+}
+/* content_body_6 */
+.card_items {
+  background-color: white;
+  transition: all 0.75s;
+}
+.card_items:hover * {
+  color: white;
+}
+.card_items:hover {
+  background-color: orangered;
+}
+.card_items:active {
+  background-color: orange;
+}
+/* footer */
+.link_text_footer {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+.link_text_footer:hover {
+  letter-spacing: 1.2px;
+  color: orange;
+}
+.link_text_footer:active {
+  color: red;
+}
+.link_icon_footer {
+  color: white;
+}
+.ggg {
+  border: 1px solid white;
+  padding: 7px;
+  transition: all 0.25s ease;
+}
+.ggg:hover {
+  background-color: orange;
+}
+.ption {
+  position: relative;
+}
+.revl2 {
+  right: 10px;
+  bottom: 35px;
+  position: absolute;
+  z-index: 9999;
+}
+.link_footer {
+  color: white;
+  border-right: 1px solid white;
+  text-decoration: none;
+}
+/* roll */
+#scrollToTopBtn {
+  display: none; /* Ẩn nút ban đầu */
+  position: fixed; /* Cố định vị trí nút */
+  bottom: 20px; /* Vị trí từ phía dưới */
+  right: 20px; /* Vị trí từ phía phải */
+  z-index: 99; /* Đảm bảo nút nằm trên cùng */
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#scrollToTopBtn svg {
+  vertical-align: middle;
+}
+.bbb {
+  background-color: transparent;
+}
