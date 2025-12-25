@@ -1,317 +1,1086 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Title -->
-    <title>Foodoo</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="img/hero.png" type="image/x-icon" />
-    <!-- link bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!-- link icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- link css -->
-    <link rel="stylesheet" href="index.css" />
-    <!-- link font family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-    <!--owl carousel-->
-    <link
-      rel="stylesheet"
-      href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
-    />
-    <!---->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-  </head>
-  <body>
-    <!-- header -->
-    <header class="container-lg">
-      <!-- nav-bar -->
-      <nav
-        id="mynavbar"
-        class="navbar container-lg navbar-expand-lg navbar-dark fixed-top"
-      >
-        <div class="container-lg">
-          <!-- Navbar logo,name -->
-          <a class="navbar-brand" href="#">
-            <i class="fa-solid fa-utensils fa-2x color_or_icon"></i>
-            <b class="brand_name">Foodoo</b>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <!-- Home -->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-              </li>
-              <!-- ABOUT -->
-              <li class="nav-item">
-                <a class="nav-link" href="#about">ABOUT</a>
-              </li>
-              <!-- SERVICE -->
-              <li class="nav-item">
-                <a class="nav-link" href="#servicego">SERVICE</a>
-              </li>
-              <!-- PAGES -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  PAGES
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <!-- CONTACT -->
-              <li class="nav-item">
-                <a class="nav-link" href="index2.html">CONTACT</a>
-              </li>
-              <li class="nav-item ms-1 mt-1">
-                <a href="#" class="btn btn_bookatable btn-danger">
-                  BOOK A TABLE
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- header content -->
-      <div class="header_content pt-5">
-        <div
-          class="row d-flex align-items-center text-md-start text-center py-5"
-        >
-          <div class="col-md-6 text_header_box ps-5">
-            <h1>
-              <b class="h1_text_header">
-                Enjoy Our <br />
-                Delicious Meal
-              </b>
-            </h1>
-            <p>
-              We are you connection point. With a variety of venues and flexible
-              meeting space <br />
-              in a multitude of destination.We'll help you make the most of your
-              time together.
-            </p>
-            <a
-              href="#"
-              class="btn btn-danger btn_bookatable h1_btn_text_header_booktable py-3"
-            >
-              <b>BOOK A TABLE</b>
-            </a>
-          </div>
-          <!-- img_header_box -->
-          <div class="col-md-6 img_header_box text-end">
-            <img
-              src="img/hero.png"
-              alt=""
-              class="img_header w-100 w-xl-50 pe-5 py-5"
-            />
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title -->
+  <title>Foodoo</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/hero.png" type="image/x-icon" />
+  <!-- link bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- link icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link css -->
+  <link rel="stylesheet" href="index.css" />
+  <!-- link font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+  <!--owl carousel-->
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
+  <!---->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="container-lg">
+    <!-- nav-bar -->
+    <nav id="mynavbar" class="navbar container-lg navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-lg">
+        <!-- Navbar logo,name -->
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-utensils fa-2x color_or_icon"></i>
+          <b class="brand_name">Foodoo</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <!-- ABOUT -->
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <!-- SERVICE -->
+            <li class="nav-item">
+              <a class="nav-link" href="#servicego">SERVICE</a>
+            </li>
+            <!-- PAGES -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                PAGES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <!-- CONTACT -->
+            <li class="nav-item">
+              <a class="nav-link" href="index2.html">CONTACT</a>
+            </li>
+            <li class="nav-item ms-1 mt-1">
+              <a href="#" class="btn btn_bookatable btn-danger">
+                BOOK A TABLE
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
-   
+    </nav>
+    <!-- header content -->
+    <div class="header_content pt-5">
+      <div class="row d-flex align-items-center text-md-start text-center py-5">
+        <div class="col-md-6 text_header_box ps-5">
+          <h1>
+            <b class="h1_text_header">
+              Enjoy Our <br />
+              Delicious Meal
+            </b>
+          </h1>
+          <p>
+            We are you connection point. With a variety of venues and flexible
+            meeting space <br />
+            in a multitude of destination.We'll help you make the most of your
+            time together.
+          </p>
+          <a href="#" class="btn btn-danger btn_bookatable h1_btn_text_header_booktable py-3">
+            <b>BOOK A TABLE</b>
+          </a>
+        </div>
+        <!-- img_header_box -->
+        <div class="col-md-6 img_header_box text-end">
+          <img src="img/hero.png" alt="" class="img_header w-100 w-xl-50 pe-5 py-5" />
+        </div>
+      </div>
+    </div>
+  </header>
 
-    
-    <!-- footer -->
-    <footer class="back_ground pt-5 text-md-start text-center">
-      <div class="row p-5">
-        <!-- Company -->
-        <div class="col-md-6 col-lg-3">
-          <div class="d-flex justify-content-md-start justify-content-center">
-            <h3 class="font_h5_content_body_2 pe-3">Company</h3>
-            <hr class="line" />
-          </div>
-          <a href="#" class="link_text_footer">
-            <i class="fa-solid fa-angle-right pe-2"></i>
-            <span class="text_title_footer">About Us</span>
-          </a>
-          <br />
-          <a href="#" class="link_text_footer">
-            <i class="fa-solid fa-angle-right pe-2"></i>
-            <span class="text_title_footer">Contact Us</span>
-          </a>
-          <br />
-          <a href="#" class="link_text_footer">
-            <i class="fa-solid fa-angle-right pe-2"></i>
-            <span class="text_title_footer">Reservation</span>
-          </a>
-          <br />
-          <a href="#" class="link_text_footer">
-            <i class="fa-solid fa-angle-right pe-2"></i>
-            <span class="text_title_footer">Privacy Policy</span>
-          </a>
-          <br />
-          <a href="#" class="link_text_footer">
-            <i class="fa-solid fa-angle-right pe-2"></i>
-            <span class="text_title_footer">Term & Condition</span>
-          </a>
-        </div>
-        <!-- Contact -->
-        <div class="col-md-6 col-lg-3">
-          <div class="d-flex justify-content-md-start justify-content-center">
-            <h5 class="font_h5_content_body_2 pe-3">Contact</h5>
-            <hr class="line" />
-          </div>
-          <a href="#" class="link_text_footer">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>123 Street, California, USA</span>
-          </a>
-          <br />
-          <a href="#" class="link_text_footer">
-            <i class="fa-solid fa-phone"></i>
-            <span>+012 345 67890</span>
-          </a>
-          <br />
-          <a href="#" class="link_text_footer">
-            <i class="fa-solid fa-envelope"></i>
-            <span>thanhhuy.itc.@gmail.com</span>
-          </a>
-          <br />
-          <div class="py-2">
-            <a href="#" class="text-decoration-none">
-              <i class="ggg fa-brands fa-twitter rounded-circle text-light"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/huathanhhuy2k?locale=vi_VN"
-              class="text-decoration-none"
-            >
-              <i
-                class="ggg fa-brands fa-facebook rounded-circle text-light"
-              ></i>
-            </a>
-            <a
-              href="https://www.facebook.com/trieudothachanh.17?locale=vi_VN"
-              class="text-decoration-none"
-            >
-              <i class="ggg fa-brands fa-youtube rounded-circle text-light"></i>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <i
-                class="ggg fa-brands fa-linkedin-in rounded-circle text-light"
-              ></i>
-            </a>
-          </div>
-        </div>
-        <!-- Opening -->
-        <div class="col-md-6 col-lg-3">
-          <div class="d-flex justify-content-md-start justify-content-center">
-            <h5 class="font_h5_content_body_2 pe-3">Opening</h5>
-            <hr class="line" />
-          </div>
-          <span class="text-white">
-            Monday - Saturday <br />
-            09AM - 09PM <br />
-            Sunday <br />
-            10AM - 08PM
-          </span>
-        </div>
-        <!-- Newsletter -->
-        <div class="col-md-6 col-lg-3">
-          <div class="d-flex justify-content-md-start justify-content-center">
-            <h5 class="font_h5_content_body_2 pe-3">Newsletter</h5>
-            <hr class="line" />
-          </div>
-          <span class="text-white">
-            Register your email to receive <br />
-            new letters about
-          </span>
-          <div class="ption py-2">
-            <div class="form-floating mb-3 revl1">
-              <input
-                type="email"
-                class="form-control"
-                id="floatingInput"
-                placeholder="name@example.com"
-              />
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="revl2 btn_bookatable">
-              <a href="#" class="btn btn-danger btn_bookatable">SIGNUP</a>
-            </div>
-          </div>
-        </div>
-        <hr class="text-white" />
-        <div class="col-md-6 text-white">
+  <!-- content_body -->
+  <div class="content_body container-lg p-5">
+    <!-- content_body_1 -->
+    <div id="servicego" class="row mb-5 py-5">
+      <!-- masterchefs -->
+      <div class="col-lg-3 col-6 gy-4">
+        <div class="masterchefs p-4 tes">
+          <i class="fa-solid fa-user-tie fa-5x color_or_icon"></i>
+          <h4 class="m-0 mt-4 mb-2">
+            <b>Master Chefs</b>
+          </h4>
           <span>
-            All Right Reserved. Designed By <u>foodoo</u>
-            <br />
-            Distributed By <u>foodoo</u>
+            Bringing people together is what <br />
+            we've done since opening our
           </span>
         </div>
-        <div class="col-md-6 text-md-end">
-          <a href="#" class="link_footer px-2">Home</a>
-          <a href="#" class="link_footer px-2">Cookies</a>
-          <a href="#" class="link_footer px-2">Help</a>
-          <a href="#" class="link_footer px-2">FQAs</a>
+      </div>
+      <!-- qualityfood -->
+      <div class="col-lg-3 col-6 gy-4">
+        <div class="qualityfood p-4 tes">
+          <i class="fa-solid fa-utensils fa-5x color_or_icon"></i>
+          <h4 class="m-0 mt-4 mb-2">
+            <b>Quality Food</b>
+          </h4>
+          <span>
+            Now we're deeply rooted in over <br />
+            400 communities across the globe.
+          </span>
         </div>
       </div>
-      <hr />
-    </footer>
-    <button id="scrollToTopBtn" title="Cuộn lên đầu trang">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="feather feather-arrow-up"
-      >
-        <line x1="12" y1="19" x2="12" y2="5"></line>
-        <polyline points="5 12 12 5 19 12"></polyline>
-      </svg>
-    </button>
-  </body>
+      <!-- onlineorder -->
+      <div class="col-lg-3 col-6 gy-4">
+        <div class="onlineorder p-4 tes">
+          <i class="fa-solid fa-cart-plus fa-5x color_or_icon"></i>
+          <h4 class="m-0 mt-4 mb-2">
+            <b>Online Order</b>
+          </h4>
+          <span>
+            We are proud to act as a point of <br />
+            connection for millions of travelers
+          </span>
+        </div>
+      </div>
+      <!-- 24/7service -->
+      <div class="col-lg-3 col-6 gy-4">
+        <div class="24/7service p-4 tes">
+          <i class="fa-solid fa-headset fa-5x color_or_icon"></i>
+          <h4 class="m-0 mt-4 mb-2">
+            <b>24/7 Service</b>
+          </h4>
+          <span>
+            we'll help you make the most of <br />
+            your time together and your time <br />
+            together
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- content_body_2 -->
+    <div class="row align-items-center py-5">
+      <!-- img_content_body_2 -->
+      <div class="col-lg-6 gx-5">
+        <div class="row">
+          <!-- img_1_content_body_2 -->
+          <div class="col-6 gy-4 align-content-end">
+            <div class="text-end">
+              <img class="img_1_content_body_2" src="img/about-1.jpg" alt="about-1" />
+            </div>
+          </div>
+          <!-- img_2_content_body_2 -->
+          <div class="col-6 gy-4 align-content-end">
+            <div>
+              <img class="img_2_content_body_2" src="img/about-2.jpg" alt="about-2" />
+            </div>
+          </div>
+          <!-- img_3_content_body_2 -->
+          <div class="col-6 gy-4">
+            <div class="text-end">
+              <img class="img_3_content_body_2" src="img/about-3.jpg" alt="about-3" />
+            </div>
+          </div>
+          <!-- img_4_content_body_2 -->
+          <div class="col-6 gy-4">
+            <div>
+              <img class="img_4_content_body_2" src="img/about-4.jpg" alt="about-1" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About -->
+      <div class="col-lg-6 mt-5 mt-lg-0 gx-5">
+        <div class="2">
+          <div class="d-flex">
+            <div>
+              <h5 id="about" class="font_h5_content_body_2">
+                <b>About Us</b>
+              </h5>
+            </div>
+            <div class="ps-3 w-25">
+              <hr class="line" />
+            </div>
+          </div>
+          <h2 class="font_h2_content_body_2">
+            <b>
+              Welcome to
+              <i class="fa-solid fa-utensils fa-1x color_or_icon"></i>
+              Foodoo
+            </b>
+          </h2>
+        </div>
+        <div class="artical">
+          <span>
+            Tempor erat elitr rebum at clita. Diam color diam ipsum sit.
+            Aliqua diam amet diam et eos erat ipum et lorem et sit, sed stet
+            lorem sit. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit.
+            <br />
+            <br />
+            Commodi iste autem voluptate recusandae odit ratione, molestias
+            pariatur officia velit, odio sit sequi, sunt ipsum vero ut?
+            Similique provident minus earum?
+          </span>
+        </div>
+        <div class="numberyears_cotent_body_2 mt-4">
+          <div class="row">
+            <div class="col-6 fake_btn_years d-flex align-items-center">
+              <div class="number_years"><b>15</b></div>
+              <div>
+                <p class="p-0 m-0">Years of</p>
+                <b>EXPERIENCE</b>
+              </div>
+            </div>
+            <div class="col-6 fake_btn_years d-flex align-items-center">
+              <div class="number_years"><b>50</b></div>
+              <div>
+                <p class="p-0 m-0">Popular</p>
+                <b>MASTER CHEFS</b>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="Readmore mt-4 btn btn-lg btn-danger btn_bookatable" data-bs-toggle="popover"
+            data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+            READ MORE
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- content_body_3 -->
+    <div class="content_body_3 py-5">
+      <div class="d-flex justify-content-center">
+        <hr class="line" />
+        <h5 class="font_h5_content_body_2 px-3">Food Menu</h5>
+        <hr class="line" />
+      </div>
+      <h3 class="font_h2_content_body_2 text-center">
+        <b>Most Popular Items</b>
+      </h3>
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item nnn" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+            <!-- Popular -->
+            <div class="nav_menu d-flex align-items-center">
+              <div>
+                <i class="fa-solid fa-mug-saucer number_years"></i>
+              </div>
+              <div>
+                <p class="p-0 m-0">Popular</p>
+                <b>Breakfast</b>
+              </div>
+            </div>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link nnn" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+            <!-- Special -->
+            <div class="nav_menu d-flex align-items-center">
+              <div>
+                <i class="fa-solid fa-burger number_years"></i>
+              </div>
+              <div>
+                <p class="p-0 m-0">Special</p>
+                <b>Launch</b>
+              </div>
+            </div>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link nnn" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+            type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+            <!-- Lovely -->
+            <div class="nav_menu d-flex align-items-center">
+              <div>
+                <i class="fa-solid fa-utensils number_years"></i>
+              </div>
+              <div>
+                <p class="p-0 m-0">Lovely</p>
+                <b>Dinner</b>
+              </div>
+            </div>
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+          tabindex="0">
+          <div class="list_menu mt-4 justify-content-end">
+            <div class="row">
+              <div class="col-md-6">
+                <!-- menu_1 -->
+                <div class="d-flex justify-content-center ani_food_1 justify-content-md-end py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-1.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Grill meat</b>
+                    <b class="fipce">$115</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_2 -->
+                <div class="d-flex justify-content-center ani_food_2 justify-content-md-end py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-3.jpg" class="w-100 pe-3" alt="menu-2" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Combo frill meat 1</b>
+                    <b class="fipce">$230</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_3 -->
+                <div class="d-flex justify-content-center ani_food_3 justify-content-md-end py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-5.jpg" class="w-100 pe-3" alt="menu-3" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Combo Grill meat 3</b>
+                    <b class="fipce">$315</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_4 -->
+                <div class="d-flex justify-content-center ani_food_4 justify-content-md-end py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-7.jpg" class="w-100 pe-3" alt="menu-4" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Pizza</b>
+                    <b class="fipce">$125</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- menu_5 -->
+                <div class="d-flex justify-content-center ani_food_5 justify-content-md-start py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-2.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Egg with meat</b>
+                    <b class="fipce">$85</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_6 -->
+                <div class="d-flex justify-content-center ani_food_6 justify-content-md-start py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-4.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">BeefSteak</b>
+                    <b class="fipce">$220</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_7 -->
+                <div class="d-flex justify-content-center ani_food_7 justify-content-md-start py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-6.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Chicken Potato</b>
+                    <b class="fipce">$145</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_8 -->
+                <div class="d-flex justify-content-center ani_food_8 justify-content-md-start py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-8.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Beffsteack 2</b>
+                    <b class="fipce">$265</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="list_menu mt-4 justify-content-end">
+            <div class="row">
+              <div class="col-md-6">
+                <!-- menu_1 -->
+                <div class="d-flex justify-content-center ani_food_1 justify-content-md-end py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-1.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Grill meat</b>
+                    <b class="fipce">$115</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_2 -->
+                <div class="d-flex justify-content-center ani_food_2 justify-content-md-end py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-3.jpg" class="w-100 pe-3" alt="menu-2" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Combo frill meat 1</b>
+                    <b class="fipce">$230</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_3 -->
+                <div class="d-flex justify-content-center ani_food_3 justify-content-md-end py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-5.jpg" class="w-100 pe-3" alt="menu-3" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Combo Grill meat 3</b>
+                    <b class="fipce">$315</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_4 -->
+                <div class="d-flex justify-content-center ani_food_4 justify-content-md-end py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-7.jpg" class="w-100 pe-3" alt="menu-4" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Pizza</b>
+                    <b class="fipce">$125</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- menu_5 -->
+                <div class="d-flex justify-content-center ani_food_1 justify-content-md-start py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-2.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Egg with meat</b>
+                    <b class="fipce">$85</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_6 -->
+                <div class="d-flex justify-content-center ani_food_2 justify-content-md-start py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-4.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">BeefSteak</b>
+                    <b class="fipce">$220</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_7 -->
+                <div class="d-flex justify-content-center ani_food_3 justify-content-md-start py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-6.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Chicken Potato</b>
+                    <b class="fipce">$145</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_8 -->
+                <div class="d-flex justify-content-center ani_food_4 justify-content-md-start py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-8.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Beffsteack 2</b>
+                    <b class="fipce">$265</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+          <div class="list_menu mt-4 justify-content-end">
+            <div class="row">
+              <div class="col-md-6">
+                <!-- menu_1 -->
+                <div class="d-flex justify-content-center ani_food_5 justify-content-md-end py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-1.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Grill meat</b>
+                    <b class="fipce">$115</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_2 -->
+                <div class="d-flex justify-content-center ani_food_6 justify-content-md-end py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-3.jpg" class="w-100 pe-3" alt="menu-2" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Combo frill meat 1</b>
+                    <b class="fipce">$230</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_3 -->
+                <div class="d-flex justify-content-center ani_food_7 justify-content-md-end py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-5.jpg" class="w-100 pe-3" alt="menu-3" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Combo Grill meat 3</b>
+                    <b class="fipce">$315</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_4 -->
+                <div class="d-flex justify-content-center ani_food_8 justify-content-md-end py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-7.jpg" class="w-100 pe-3" alt="menu-4" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Pizza</b>
+                    <b class="fipce">$125</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- menu_5 -->
+                <div class="d-flex justify-content-center ani_food_5 justify-content-md-start py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-2.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Egg with meat</b>
+                    <b class="fipce">$85</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_6 -->
+                <div class="d-flex justify-content-center ani_food_6 justify-content-md-start py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-4.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">BeefSteak</b>
+                    <b class="fipce">$220</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_7 -->
+                <div class="d-flex justify-content-center ani_food_7 justify-content-md-start py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-6.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Chicken Potato</b>
+                    <b class="fipce">$145</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+                <!-- menu_8 -->
+                <div class="d-flex justify-content-center ani_food_8 justify-content-md-start py-2">
+                  <div class="img_menu">
+                    <img src="img/menu-8.jpg" class="w-100 pe-3" alt="menu-1" />
+                  </div>
+                  <div>
+                    <b class="name_food_menu">Beffsteack 2</b>
+                    <b class="fipce">$265</b>
+                    <hr class="my-2" />
+                    ipsum ipsum clita erat amet dolor justo diam
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content_body_4 -->
+    <div class="content_body_4 py-5">
+      <div class="row">
+        <div class="col-md-6 p-0">
+          <a href="https://youtu.be/-vtBgNxMyZI?si=z-uPQ9d19xvSVX4c" target="_blank">
+            <div class="img_bg_content_body_4">
+              <i class="fa-solid fa-circle-play fa-5x"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 back_ground p-3">
+          <div class="d-flex">
+            <h5 class="font_h5_content_body_2 pe-3">Revervation</h5>
+            <div>
+              <hr class="line" />
+            </div>
+          </div>
+          <h3 class="text-white">Book A Table Online</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Your Name" />
+                <label for="floatingInput">Your Name</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                <label for="floatingInput">Email address</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Date & Time" />
+                <label for="floatingInput">Date & Time</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>People 0</option>
+                  <option value="1">People 1</option>
+                  <option value="2">People 2</option>
+                  <option value="3">People 3</option>
+                </select>
+                <label for="floatingSelect">No of People</label>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-danger btn-lg btn_bookatable w-100">
+                BOOK NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content_body_5 -->
+    <div class="content_body_5 py-5">
+      <div class="d-flex justify-content-center">
+        <hr class="line" />
+        <h5 class="font_h5_content_body_2 px-3">Team Members</h5>
+        <hr class="line" />
+      </div>
+      <h3 class="font_h2_content_body_2 text-center">
+        <b>Our Master Chefs</b>
+      </h3>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 g-3">
+          <div class="back_ground_card_team">
+            <div class="card_img text-center p-3">
+              <img src="img/team-1.jpg" alt="team-1" class="border_img flex-shrink-0" />
+            </div>
+            <div class="text-center pb-4">
+              <h4><b>Alex Json</b></h4>
+              <span>Master Chefs</span>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+              <a class="btn btn-danger btn-primary bg_icon mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-danger btn-primary bg_icon mx-1" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-danger btn-primary bg_icon mx-1" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 g-3">
+          <div class="back_ground_card_team">
+            <div class="card_img text-center p-3">
+              <img src="img/team-2.jpg" alt="team-2" class="border_img" />
+            </div>
+            <div class="text-center pb-4">
+              <h4><b>Alex Json</b></h4>
+              <span>Master Chefs</span>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+              <a class="btn btn-danger btn-primary bg_icon mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-danger btn-primary bg_icon mx-1" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-danger btn-primary bg_icon mx-1" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 g-3">
+          <div class="back_ground_card_team">
+            <div class="card_img text-center p-3">
+              <img src="img/team-3.jpg" alt="team-3" class="border_img" />
+            </div>
+            <div class="text-center pb-4">
+              <h4><b>Alex Json</b></h4>
+              <span>Master Chefs</span>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+              <a class="btn btn-danger btn-primary bg_icon mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-danger btn-primary bg_icon mx-1" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-danger btn-primary bg_icon mx-1" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 g-3">
+          <div class="back_ground_card_team">
+            <div class="card_img text-center p-3">
+              <img src="img/team-4.jpg" alt="team-4" class="border_img" />
+            </div>
+            <div class="text-center pb-4">
+              <h4><b>Alex Json</b></h4>
+              <span>Master Chefs</span>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+              <a class="btn btn-danger btn-primary bg_icon mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-danger btn-primary bg_icon mx-1" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-danger btn-primary bg_icon mx-1" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content_body_6 -->
+    <div class="content_body_6 py-5">
+      <div class="d-flex justify-content-center">
+        <hr class="line" />
+        <h5 class="font_h5_content_body_2 px-3">Testimonial</h5>
+        <hr class="line" />
+      </div>
+      <h3 class="font_h2_content_body_2 text-center">
+        <b>Most Popular Items</b>
+      </h3>
+      <div class="owl-carousel owl-theme">
+        <div class="item card_items p-4">
+          <i class="fa-solid fa-quote-left fa-3x color_or_icon"></i>
+          <p>
+            The gentle way Graham says "Well it's not even eating it. It's
+            looking at it." Is the funniest fucking thing, even being as harsh
+            as the other 2 he still sounds nice.
+          </p>
+          <div class="d-flex align-items-center">
+            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+              style="width: 50px; height: 50px" alt="" />
+            <div class="ps-3">
+              <h5 class="mb-1">Client Name</h5>
+              <small>Profession</small>
+            </div>
+          </div>
+        </div>
+        <div class="item card_items p-4">
+          <i class="fa-solid fa-quote-left fa-3x color_or_icon"></i>
+          <p>
+            I would rather be screamed at by Gordon instead of being bullied
+            by that look-a-like Johnny Sins.
+          </p>
+          <div class="d-flex align-items-center">
+            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+              style="width: 50px; height: 50px" alt="" />
+            <div class="ps-3">
+              <h5 class="mb-1">Client Name</h5>
+              <small>Profession</small>
+            </div>
+          </div>
+        </div>
+        <div class="item card_items p-4">
+          <i class="fa-solid fa-quote-left fa-3x color_or_icon"></i>
+          <p>
+            The gentle way Graham says "Well it's not even eating it. It's
+            looking at it." Is the funniest fucking thing, even being as harsh
+            as the other 2 he still sounds nice.
+          </p>
+          <div class="d-flex align-items-center">
+            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+              style="width: 50px; height: 50px" alt="" />
+            <div class="ps-3">
+              <h5 class="mb-1">Client Name</h5>
+              <small>Profession</small>
+            </div>
+          </div>
+        </div>
+        <div class="item card_items p-4">
+          <i class="fa-solid fa-quote-left fa-3x color_or_icon"></i>
+          <p>
+            You can feel that Gordan's anger is justified, but every time I
+            see Joe, he feels like he is being angry because he wants to be
+            angry.
+          </p>
+          <div class="d-flex align-items-center">
+            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+              style="width: 50px; height: 50px" alt="" />
+            <div class="ps-3">
+              <h5 class="mb-1">Client Name</h5>
+              <small>Profession</small>
+            </div>
+          </div>
+        </div>
+        <div class="item card_items p-4">
+          <i class="fa-solid fa-quote-left fa-3x color_or_icon"></i>
+          <p>
+            I would rather be screamed at by Gordon instead of being bullied
+            by that look-a-like Johnny Sins.
+          </p>
+          <div class="d-flex align-items-center">
+            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+              style="width: 50px; height: 50px" alt="" />
+            <div class="ps-3">
+              <h5 class="mb-1">Client Name</h5>
+              <small>Profession</small>
+            </div>
+          </div>
+        </div>
+        <div class="item card_items p-4">
+          <i class="fa-solid fa-quote-left fa-3x color_or_icon"></i>
+          <p>
+            The gentle way Graham says "Well it's not even eating it. It's
+            looking at it." Is the funniest fucking thing, even being as harsh
+            as the other 2 he still sounds nice.
+          </p>
+          <div class="d-flex align-items-center">
+            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+              style="width: 50px; height: 50px" alt="" />
+            <div class="ps-3">
+              <h5 class="mb-1">Client Name</h5>
+              <small>Profession</small>
+            </div>
+          </div>
+        </div>
+        <div class="item card_items p-4">
+          <i class="fa-solid fa-quote-left fa-3x color_or_icon"></i>
+          <p>
+            You can feel that Gordan's anger is justified, but every time I
+            see Joe, he feels like he is being angry because he wants to be
+            angry.
+          </p>
+          <div class="d-flex align-items-center">
+            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+              style="width: 50px; height: 50px" alt="" />
+            <div class="ps-3">
+              <h5 class="mb-1">Client Name</h5>
+              <small>Profession</small>
+            </div>
+          </div>
+        </div>
+        <div class="item card_items p-4">
+          <i class="fa-solid fa-quote-left fa-3x color_or_icon"></i>
+          <p>
+            I would rather be screamed at by Gordon instead of being bullied
+            by that look-a-like Johnny Sins.
+          </p>
+          <div class="d-flex align-items-center">
+            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+              style="width: 50px; height: 50px" alt="" />
+            <div class="ps-3">
+              <h5 class="mb-1">Client Name</h5>
+              <small>Profession</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- thanhleft -->
+    <div class="text-center">
+      <button class="btn btn-primary bbb" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        Thầy ơi bấm vào nút này nè ạ
+      </button>
+      <div class="offcanvas offcanvas-start text-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            <span>Mốt số chi tiết nhỏ trong bài sợ thầy bỏ qua ạ <3< /span>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <h3>1</h3>
+            Thầy có thể bấm vào nút Contact trên menu để chuyển sang bài thứ 2
+            của con ạ
+            <h3>2</h3>
+            Thầy hover vào 15 years of và 50 Popular để thấy animation ạ
+          </div>
+          <h3>3</h3>
+          Thầy hover vào carousel và active giữ nó để thấy thẻ có thể đổi màu
+          ạ
+          <h3>4</h3>
+          Thầy hover vào các nội dung Company và Contact của footer để thấy
+          animation ạ
+          <h3>
+            Cảm ơn đã xem bài của con ạ <br />
+            Thầy thấy đủ quao chưa ạ
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="back_ground pt-5 text-md-start text-center">
+    <div class="row p-5">
+      <!-- Company -->
+      <div class="col-md-6 col-lg-3">
+        <div class="d-flex justify-content-md-start justify-content-center">
+          <h3 class="font_h5_content_body_2 pe-3">Company</h3>
+          <hr class="line" />
+        </div>
+        <a href="#" class="link_text_footer">
+          <i class="fa-solid fa-angle-right pe-2"></i>
+          <span class="text_title_footer">About Us</span>
+        </a>
+        <br />
+        <a href="#" class="link_text_footer">
+          <i class="fa-solid fa-angle-right pe-2"></i>
+          <span class="text_title_footer">Contact Us</span>
+        </a>
+        <br />
+        <a href="#" class="link_text_footer">
+          <i class="fa-solid fa-angle-right pe-2"></i>
+          <span class="text_title_footer">Reservation</span>
+        </a>
+        <br />
+        <a href="#" class="link_text_footer">
+          <i class="fa-solid fa-angle-right pe-2"></i>
+          <span class="text_title_footer">Privacy Policy</span>
+        </a>
+        <br />
+        <a href="#" class="link_text_footer">
+          <i class="fa-solid fa-angle-right pe-2"></i>
+          <span class="text_title_footer">Term & Condition</span>
+        </a>
+      </div>
+      <!-- Contact -->
+      <div class="col-md-6 col-lg-3">
+        <div class="d-flex justify-content-md-start justify-content-center">
+          <h5 class="font_h5_content_body_2 pe-3">Contact</h5>
+          <hr class="line" />
+        </div>
+        <a href="#" class="link_text_footer">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>123 Street, California, USA</span>
+        </a>
+        <br />
+        <a href="#" class="link_text_footer">
+          <i class="fa-solid fa-phone"></i>
+          <span>+012 345 67890</span>
+        </a>
+        <br />
+        <a href="#" class="link_text_footer">
+          <i class="fa-solid fa-envelope"></i>
+          <span>thanhhuy.itc.@gmail.com</span>
+        </a>
+        <br />
+        <div class="py-2">
+          <a href="#" class="text-decoration-none">
+            <i class="ggg fa-brands fa-twitter rounded-circle text-light"></i>
+          </a>
+          <a href="https://www.facebook.com/huathanhhuy2k?locale=vi_VN" class="text-decoration-none">
+            <i class="ggg fa-brands fa-facebook rounded-circle text-light"></i>
+          </a>
+          <a href="https://www.facebook.com/trieudothachanh.17?locale=vi_VN" class="text-decoration-none">
+            <i class="ggg fa-brands fa-youtube rounded-circle text-light"></i>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <i class="ggg fa-brands fa-linkedin-in rounded-circle text-light"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Opening -->
+      <div class="col-md-6 col-lg-3">
+        <div class="d-flex justify-content-md-start justify-content-center">
+          <h5 class="font_h5_content_body_2 pe-3">Opening</h5>
+          <hr class="line" />
+        </div>
+        <span class="text-white">
+          Monday - Saturday <br />
+          09AM - 09PM <br />
+          Sunday <br />
+          10AM - 08PM
+        </span>
+      </div>
+      <!-- Newsletter -->
+      <div class="col-md-6 col-lg-3">
+        <div class="d-flex justify-content-md-start justify-content-center">
+          <h5 class="font_h5_content_body_2 pe-3">Newsletter</h5>
+          <hr class="line" />
+        </div>
+        <span class="text-white">
+          Register your email to receive <br />
+          new letters about
+        </span>
+        <div class="ption py-2">
+          <div class="form-floating mb-3 revl1">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="revl2 btn_bookatable">
+            <a href="#" class="btn btn-danger btn_bookatable">SIGNUP</a>
+          </div>
+        </div>
+      </div>
+      <hr class="text-white" />
+      <div class="col-md-6 text-white">
+        <span>
+          All Right Reserved. Designed By <u>foodoo</u>
+          <br />
+          Distributed By <u>foodoo</u>
+        </span>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="#" class="link_footer px-2">Home</a>
+        <a href="#" class="link_footer px-2">Cookies</a>
+        <a href="#" class="link_footer px-2">Help</a>
+        <a href="#" class="link_footer px-2">FQAs</a>
+      </div>
+    </div>
+    <hr />
+  </footer>
+  <button id="scrollToTopBtn" title="Cuộn lên đầu trang">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+</body>
+
 </html>
-
-
